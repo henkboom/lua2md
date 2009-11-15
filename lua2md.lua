@@ -39,6 +39,15 @@
 --- Note that although the code block is not shown, the break in documentation
 --- still acts as a paragraph break.
 
+--- Usage
+--- -----
+---
+--- Currently lua2md always reads source code from standard input and writes
+--- documentation to standard output. As an example, lua2md's own documentation
+--- can be generated with:
+---
+---     lua lua2md.lua < lua2md.lua > README.md
+
 --- Implementation
 --- --------------
 
