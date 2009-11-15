@@ -40,6 +40,16 @@ Note that although the code block is not shown, the break in documentation
 still acts as a paragraph break.
 
 
+Usage
+-----
+
+Currently lua2md always reads source code from standard input and writes
+documentation to standard output. As an example, lua2md's own documentation
+can be generated with:
+
+    lua lua2md.lua < lua2md.lua > README.md
+
+
 Implementation
 --------------
 
@@ -49,7 +59,7 @@ If `line` contains documentation, then returns the markdown to output,
 otherwise returns `false`.
 
     function doc(line)
-      return line:match('^%-%-%- (.*)$') or line:match('^%-%-%-$') and ""
+      return line:match('^%s*%-%-%- (.*)$') or line:match('^%s*%-%-%-$') and ""
     end
 
 ### code(line)

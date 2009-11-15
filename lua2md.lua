@@ -55,7 +55,7 @@
 --- If `line` contains documentation, then returns the markdown to output,
 --- otherwise returns `false`.
 function doc(line)
-  return line:match('^%-%-%- (.*)$') or line:match('^%-%-%-$') and ""
+  return line:match('^%s*%-%-%- (.*)$') or line:match('^%s*%-%-%-$') and ""
 end
 
 --- ### code(line)
