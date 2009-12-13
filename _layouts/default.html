@@ -1,10 +1,50 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
   <head>
-      <title>{{ page.title }}</title>
+    <title>{{ page.title }}</title>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <style>
+      * { border: 0; padding: 0; margin: 0; }
+      body {
+        background-color: #444;
+        color: #444;
+        font-family: "Helvetica", "Arial", sans-serif;
+      }
+      h1 { font-size: 300%; letter-spacing: -0.05em; }
+      h2 { font-size: 150%; font-weight: bold; padding-top: 1em;
+           margin-bottom: -0.5em; letter-spacing: -0.05em; }
+      h3 { font-size: 100%; font-weight: bold; padding-top: 1em;
+           margin-bottom: -0.5em; }
+      em { color: #675ede; font-style: normal; }
+      a { color: #675ede; text-decoration: none; }
+
+      p, pre, blockquote, img, object { margin-top: 1em; }
+      ul { list-style-type: none; padding: 0 1em 0 1em; }
+      li { text-indent: -1em; padding-left: 1em; }
+      pre, blockquote { border: 1px dashed #444; padding: 1em; font-size: 80%; }
+      blockquote *:first-child { margin-top: 0; }
+
+      #page
+      {
+        width: 600px;
+        padding: 0 1em 0 1em;
+        margin: 0 auto 4em auto;
+      }
+      #menu { color: #888; }
+      #menu a{ color: #fff; }
+      .section
+      {
+        background-color: #fff;
+        margin: 0em -1em 1em -1em;
+        padding: 1em;
+      }
+
+      #code { display: none }
+    </style>
   </head>
-  <body>
-    {{ content }}
-  </body>
+  <body><div id="page">
+    <div class="section">
+      {{ content }}
+    </div>
+  </div></body>
 </html>
