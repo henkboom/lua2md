@@ -1,5 +1,6 @@
 ---
 title: lua2md
+layout: default
 ---
 
 lua2md
